@@ -11,6 +11,11 @@ class MaskTest(unittest.TestCase):
             masks2 = get_card_masks(num_players=num_players)
             self.assertFalse((masks1 == masks2).all())
 
+    def test_one_mask_per_player(self):
+        for num_players in [3, 4, 5]:
+            masks = get_card_masks(num_players=num_players)
+            self.assertEqual(masks.shape[0], num_players)
+
     def test_each_player_has_five_cards_marked(self):
         for num_players in [3, 4, 5]:
             masks = get_card_masks(num_players=num_players)

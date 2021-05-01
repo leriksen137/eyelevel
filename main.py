@@ -4,7 +4,7 @@ from pictonara.generate import get_card_masks
 from pictonara.plot import make_mask_images
 
 
-def main():
+def generate_and_plot():
     parser = argparse.ArgumentParser(description="Create Pictonara Masks")
     parser.add_argument("-p", "--num_players", type=int, default=4)
     args = parser.parse_args()
@@ -13,5 +13,5 @@ def main():
     make_mask_images(c)
 
 
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+    generate_and_plot()
