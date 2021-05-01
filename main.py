@@ -11,6 +11,7 @@ def generate_and_plot():
 
     c = get_card_masks(num_players=args.num_players)
     make_mask_images(c)
+    print("Complete!")
 
 
 if __name__ == "__main__":

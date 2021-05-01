@@ -13,5 +13,5 @@ def make_mask_images(masks: np.ndarray) -> None:
             ax[card_idx % 4, card_idx // 4].set_xticks([])
             ax[card_idx % 4, card_idx // 4].set_yticks([])
 
-        plt.savefig(f"../player_{player_idx+1}_of_{masks.shape[0]}")
+        plt.savefig(f"player_{player_idx+1}_of_{masks.shape[0]}")
         plt.close()
