@@ -1,0 +1,1 @@
+Generated images will be put into this folder.
