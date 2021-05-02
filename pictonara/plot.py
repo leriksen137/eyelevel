@@ -10,7 +10,7 @@ def make_mask_images(masks: np.ndarray) -> None:
         fig, ax = plt.subplots(4, 4)
         fig.set_size_inches(6, 10)
         for card_idx, m in enumerate(mask):
-            if m == 1:
+            if m == 0:
                 ax[card_idx % 4, card_idx // 4].hist(m, bins=1, color=colors[player_idx])
             ax[card_idx % 4, card_idx // 4].set_xticks([])
             ax[card_idx % 4, card_idx // 4].set_yticks([])
